@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlueSeed Foundation</title>
+
+<style>
+/* ================== 기본 스타일 ================== */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+}
+
+/* ================== 헤더 ================== */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0; left: 0;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 10;
+  transition: 0.3s;
+}
+header.scrolled {
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0077b6;
+}
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #0077b6;
+}
+
+/* ================== 섹션 공통 ================== */
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  transition: 0.5s;
+}
+section h1, section h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+section p {
+  max-width: 700px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ================== 각 섹션 ================== */
+#home {
+  background: linear-gradient(to bottom right, #0077b6, #00b4d8);
+  color: white;
+}
+#home h1 {
+  font-size: 2.5rem;
+}
+#home p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+
+#intro {
+  background: #f0f8ff;
+}
+#activities {
+  background: #e7f9f4;
+}
+#campaign {
+  background: #fdfcfb;
+}
+#news {
+  background: #eef6fb;
+}
+#contact {
+  background: #f8f9fa;
+}
+
+/* ================== 카드형 콘텐츠 ================== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  width: 280px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================== 버튼 ================== */
+button, .btn {
+  background: #0077b6;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+button:hover, .btn:hover {
+  background: #0096c7;
+}
+
+/* ================== 푸터 ================== */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================== 헤더 ================== -->
+<header>
+  <div class="logo">🌊 BlueSeed Foundation</div>
+  <nav>
+    <a href="#intro">소개</a>
+    <a href="#activities">핵심활동</a>
+    <a href="#campaign">캠페인참여</a>
+    <a href="#news">뉴스/스토리</a>
+    <a href="#contact">후원·문의</a>
+  </nav>
+</header>
+
+<!-- ================== 홈 섹션 ================== -->
+<section id="home">
+  <h1>작은 씨앗이 푸른 바다를 지킨다</h1>
+  <p>BlueSeed Foundation은 해양 쓰레기를 줄이고, 바다 생태계를 지키기 위해 만들어진 비영리 재단입니다.</p>
+  <a href="#intro" class="btn">더 알아보기</a>
+</section>
+
+<!-- ================== 소개 섹션 ================== -->
+<section id="intro">
+  <h2>우리가 하는 일</h2>
+  <p>블루시드는 청소년과 시민이 함께 참여하는 해양 보호 활동을 중심으로, 깨끗한 바다와 지속 가능한 미래를 만들고자 합니다.  
+  해양 쓰레기 수거, 해안 생태 조사, 해양 생물 보호 캠페인을 주로 진행하고 있습니다.</p>
+</section>
+
+<!-- ================== 핵심활동 섹션 ================== -->
+<section id="activities">
+  <h2>핵심 활동</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🌍 해양 쓰레기 줄이기</h3>
+      <p>정기적인 해안 정화 활동과 플라스틱 저감 캠페인을 운영합니다.</p>
+    </div>
+    <div class="card">
+      <h3>🐠 해양 생물 보호</h3>
+      <p>멸종 위기 해양 생물을 위한 서식지 모니터링과 시민 과학 프로젝트를 진행합니다.</p>
+    </div>
+    <div class="card">
+      <h3>👩‍🔬 청소년 해양 교육</h3>
+      <p>환경 교육, 해양 실험 워크숍을 통해 미래 세대의 인식 개선을 돕습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 캠페인참여 섹션 ================== -->
+<section id="campaign">
+  <h2>캠페인에 참여하세요</h2>
+  <p>당신의 작은 행동이 큰 변화를 만듭니다.  
+  BlueSeed의 해양 정화 캠페인에 참여하고, 지구를 위한 실천을 시작하세요.</p>
+  <button onclick="alert('캠페인 참여 신청이 접수되었습니다! 감사합니다 🌊');">참여하기</button>
+</section>
+
+<!-- ================== 뉴스/스토리 섹션 ================== -->
+<section id="news">
+  <h2>뉴스 & 스토리</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>[스토리] 바다를 지킨 하루</h3>
+      <p>지난 주, 50명의 봉사자와 함께 부산 해변에서 300kg의 해양 쓰레기를 수거했습니다.</p>
+    </div>
+    <div class="card">
+      <h3>[소식] 블루시드 청소년 포럼 개최</h3>
+      <p>지속 가능한 바다를 위한 청소년 토론 포럼이 다음 달 열립니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================== 후원/문의 섹션 ================== -->
+<section id="contact">
+  <h2>후원 및 문의</h2>
+  <p>BlueSeed와 함께 바다를 지키는 여정에 함께해주세요.<br>
+  재단 활동에 대한 문의나 후원 의사는 아래 연락처로 알려주세요.</p>
+  <p>📧 <b>contact@blueseed.org</b><br>📞 02-1234-5678</p>
+  <a href="mailto:contact@blueseed.org" class="btn">이메일 보내기</a>
+</section>
+
+<!-- ================== 푸터 ================== -->
+<footer>
+  © 2025 BlueSeed Foundation. All rights reserved.
+</footer>
+
+<!-- ================== JavaScript ================== -->
+<script>
+// 스크롤 시 헤더 스타일 변화
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  if(window.scrollY > 50){
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+
+</body>
+</html>
